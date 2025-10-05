@@ -1,4 +1,5 @@
-const studentUnits = [
+const studentUnits = {
+  data: [
   {
     id: 'ISYS2014',
     name: 'Database Systems',
@@ -35,6 +36,7 @@ const studentUnits = [
       { date: '2025-10-25', weight: '10%' },
     ],
   },
-];
+]
+};
 
 module.exports = { studentUnits };
