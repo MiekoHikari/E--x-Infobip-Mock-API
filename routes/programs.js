@@ -17,7 +17,10 @@ router.get('/programs', (req, res) => {
 
 // GET /programs/:programId
 router.get('/programs/:programId', (req, res) => {
-  if (req.params.programId === 'IT-UG-2025') return res.json(programDetail);
+  const program = programs.data.find((p) => p.programId === req.params.programId);
+  if (program) {
+    return res.json(program);
+  }
   res.status(404).json({ message: 'Program not found' });
 });
 
