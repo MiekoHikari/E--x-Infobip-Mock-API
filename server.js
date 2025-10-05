@@ -12,7 +12,9 @@ app.use('/api', programRoutes);
 app.use('/api', admissionRoutes);
 app.use('/api', serviceRoutes);
 
-app.get('/', (req, res) => res.send('API running...'));
+const today = new Date()
+
+app.get('/', (req, res) => res.send(`API running...\nToday: ${today}`));
 
 const PORT = 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
