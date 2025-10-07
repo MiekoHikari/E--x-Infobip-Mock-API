@@ -18,4 +18,3 @@ app.get('/', (req, res) => res.send(`API running...\nToday: ${today}`));
 
 const PORT = 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-// test
