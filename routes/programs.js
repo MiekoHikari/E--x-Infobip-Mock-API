@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const { programs } = require('../data/programs/programs');
-const { programDetail } = require('../data/programs/programDetail');
 
 // GET /programs
 router.get('/programs', (req, res) => {
